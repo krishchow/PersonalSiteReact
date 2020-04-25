@@ -9,7 +9,6 @@ class Skill extends Component {
         }
         this.handleClose = () => this.setState({show:false});
         this.handleShow = () => {
-            console.log('here')
             this.setState({show:true});
         }
     }
@@ -28,7 +27,7 @@ class Skill extends Component {
                         {this.props.body}
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="primary" onClick={this.componentDidMounthandleClose}>
+                        <Button variant="primary" onClick={this.handleClose}>
                             Close
                         </Button>
                     </Modal.Footer>

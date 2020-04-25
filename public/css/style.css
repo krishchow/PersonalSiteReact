@@ -2448,12 +2448,16 @@ h6 {
   .about_area .about_img {
     position: relative;
     right: 250px; }
+    .about_img img {
+        padding-left:3vw;
+    }
     @media (max-width: 1480px) {
       .about_area .about_img {
         right: 0; }
         .about_area .about_img img {
           max-width: 100%;
-          height: auto; } }
+          height: auto; 
+          padding-left: 0vw; } }
     @media (max-width: 991px) {
       .about_area .about_img {
         display: none; } }

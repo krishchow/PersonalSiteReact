@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+import {
+    Link
+} from "react-router-dom";
 class Footer extends Component {
     render() {
         return (
@@ -9,9 +11,9 @@ class Footer extends Component {
                         <div class="col-lg-12">
                             <div class="footer_top flex-column">
                                 <div class="footer_logo">
-                                    <a href="#">
+                                    <Link to="/">
                                         <img src="img/logo.png" alt=""/>
-                                    </a>
+                                    </Link>
                                     <h4>Find Me</h4>
                                 </div>
                                 <div class="footer_social">
