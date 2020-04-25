@@ -5,7 +5,7 @@ import Summary from '../components/Summary/Summary';
 import Skills from '../components/Skills/Skills';
 import Footer from '../components/Footer/Footer';
 
-class HomePage extends Component {
+class AboutPage extends Component {
   render() {
       return (
         <div className="App">
@@ -19,4 +19,4 @@ class HomePage extends Component {
     }
 }
 
-export default HomePage;
+export default AboutPage;

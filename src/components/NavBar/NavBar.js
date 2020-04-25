@@ -9,9 +9,9 @@ class NavBar extends Component {
                 <div className="main_menu">
                     <nav className="navbar navbar-expand-lg navbar-light">
                         <div className="container">
-                            <a className="navbar-brand logo_h" href="index.html">
+                            <Link className="navbar-brand logo_h" to="/">
                                 <img src="img/logo.png" alt=""/>
-                            </a>
+                            </Link>
                             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="icon-bar"></span>
@@ -46,7 +46,9 @@ class NavBar extends Component {
                                             </li>
                                         </ul>
                                     </li>
-                                    <li className="nav-item"><a className="nav-link" href="portfolio.html">Portfolio</a></li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/portfolio">Portfolio</Link>
+                                    </li>
                                 </ul>
                             </div>
                         </div>

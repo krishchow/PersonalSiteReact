@@ -1,16 +1,17 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
   Route,
 } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import PortfolioPage from './pages/PortfolioPage';
 
 
-export default function BasicExample() {
+export default function Router() {
   return (
-    <Router>
+    <BrowserRouter>
         <div>
             {/*
             A <Switch> looks through all its children <Route>
@@ -26,8 +27,11 @@ export default function BasicExample() {
                 <Route path="/about">
                     <AboutPage />
                 </Route>
+                <Route path="/portfolio">
+                    <PortfolioPage />
+                </Route>
             </Switch>
         </div>
-    </Router>
+    </BrowserRouter>
   );
 }
