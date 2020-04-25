@@ -3,77 +3,78 @@ import NavBar from '../components/NavBar/NavBar';
 import Header from '../components/Header/Header';
 import Portfolio from '../components/Portfolio/Portfolio';
 import Footer from '../components/Footer/Footer';
+import { Helmet } from 'react-helmet'
 
 const project_list = [
     {
         img: 's1',
-        title: '',
-        body: ''
+        title: 'Identity and Access Management',
+        body: 'Implemented enterprise wide Privliged Access Management solutions at several large organizations.'
     },
     {
         img: 's1',
-        title: '',
-        body: ''
+        title: 'Vulnerability Manangement',
+        body: 'Combined Vulnerablity Management and Patch Management through CMDB and Vulnerablity Scanning integrations.'
     },
     {
         img: 's2',
-        title: '',
-        body: ''
+        title: 'Commercial Vehicle Centre',
+        body: 'Led the Technology stream of the Revamp of a dealership facing Marketing and Sales program.'
     },
     {
         img: 's7',
-        title: '',
-        body: ''
+        title: 'myTown Elevate Hackathon',
+        body: 'Built a password manager and automated login desktop application for the City of Toronto Libraries using SQL, Selenium and Flask.'
     },
     {
         img: 's3',
-        title: '',
-        body: ''
+        title: 'CS Teaching Assistant',
+        body: 'Taught first years students basics of programming in Python 3 along with, Object-Oriented design, data structure, data types and recursion.'
     },
     {
         img: 's2',
-        title: '',
-        body: ''
+        title: 'Tech Order Form',
+        body: 'Developed a web-based form using C# which dealership used to order technology as a part of an annual Canada wide device refresh.'
     },
     {
         img: 's9',
-        title: '',
-        body: ''
+        title: 'Gift the Code Hackathon',
+        body: 'Created an anonymized survey web application for collect feedback and questions from indigenous youth for the Indspire non-profit organization.'
     },
     {
         img: 's2',
-        title: '',
-        body: ''
+        title: 'Robotic Process Automation Projects',
+        body: 'Developed tool agnostic Robotic Process Automation scripts and applications used to increase team efficency and mine vast ammounts of data.'
     },
     {
         img: 's2',
-        title: '',
-        body: ''
+        title: 'Vendor Access Form',
+        body: 'Created a desktop application to generate pre-filled domain access requests for external vendors, contrators and suppliers. Saving time and increasing data quality.'
     },
     {
         img: 's3',
-        title: '',
-        body: ''
+        title: 'Commerce Research Assistant',
+        body: 'Developed the course outline for a fourth year data analytics course for accounting students at the Rotman School of Management.'
     },
     {
         img: 's3',
-        title: '',
-        body: ''
+        title: 'Technology Research Assistant',
+        body: 'Migrated the discussion board and research resources from Google suite to an Office 365 platform; this site is used by 300 students each semester.'
     },
     {
         img: 's2',
-        title: '',
-        body: ''
+        title: 'Dealership Security Audit',
+        body: 'Automated and completed annual audit of 1300 Canadian dealership in order to ensure policy of least privliged access to key dealership applications.'
     },
     {
         img: 's4',
-        title: '',
-        body: ''
+        title: 'Workshop Project Lead',
+        body: 'Developed and led workshops for fellow computer science students on non-curricular topics such RESTful APIs.'
     },
     {
         img: 's5',
-        title: '',
-        body: ''
+        title: 'Director of Sponsorships',
+        body: 'Organized events for Computer Science, Math and Statistics students to develop a sense of community and increase collaboration.'
     },
     {
         img: 's6',
@@ -90,8 +91,8 @@ const project_list = [
     },
     {
         img: 's8',
-        title: '',
-        body: ''
+        title: 'Tech and the City Hackathon',
+        body: 'Created an interactive map visualization which enabled local B2B communication using Python and Processing.'
     },
 ];
 
@@ -105,6 +106,9 @@ class PortfolioPage extends Component {
         const row_length = 4;
         return (
             <div className="App">
+                <Helmet>
+                    <title>Portfolio</title>
+                </Helmet>
                 <NavBar/>
                 <Header title="Project Portfolio" link_test="Portfolio" link="/portfolio"/>
                 {chunk(project_list, row_length).map((value, index) => {
