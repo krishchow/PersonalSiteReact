@@ -18,8 +18,8 @@ class Skill extends Component {
         return (
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="single-brand-item d-table">
-                    <div class="d-table-cell text-center">
-                        <img src={`img/brands/${this.props.img}`} alt="" onClick={this.handleShow}/>
+                    <div class="d-table-cell text-center" onClick={this.handleShow}>
+                        <img src={`img/brands/${this.props.img}`} alt=""/>
                     </div>
                 </div>
                 <Modal show={this.state.show} onHide={this.handleClose}>

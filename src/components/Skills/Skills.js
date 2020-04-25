@@ -1,6 +1,6 @@
 /* eslint-disable no-multi-str */
 import React, { Component } from 'react';
-import Skill from '../Skill/Skill';
+import Skill from './Skill/Skill';
 
 const skill_list = [
     {
