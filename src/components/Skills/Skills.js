@@ -74,25 +74,25 @@ const skill_list = [
 class Skills extends Component {
     render() {
         return (
-            <section class="brand_area section_gap_bottom">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6">
-                            <div class="row">
+            <section className="brand_area section_gap_bottom">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-6">
+                            <div className="row">
                                 {skill_list.map((skill, index) => <Skill key={index} img={skill.img} body={skill.body}/>)}
                             </div>
                         </div>
-                        <div class="offset-lg-2 col-lg-4 col-md-6">
-                            <div class="client-info">
-                                <div class="d-flex mb-50">
-                                    <span class="lage">3</span>
-                                    <span class="smll">Years Industry Experience</span>
+                        <div className="offset-lg-2 col-lg-4 col-md-6">
+                            <div className="client-info">
+                                <div className="d-flex mb-50">
+                                    <span className="lage">3</span>
+                                    <span className="smll">Years Industry Experience</span>
                                 </div>
-                                <div class="call-now d-flex">
+                                <div className="call-now d-flex">
                                     <div>
-                                        <span class="fa fa-search-plus"></span>
+                                        <span className="fa fa-search-plus"></span>
                                     </div>
-                                    <div class="ml-15">
+                                    <div className="ml-15">
                                         <p>Currently learning</p>
                                         <h3>Express, MongoDB and React</h3>
                                     </div>

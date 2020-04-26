@@ -21,8 +21,8 @@ class PortfolioTile extends Component {
     render() {
         const value = this.props.tile;
         return (
-            <div class="col-lg-3 col-md-6">
-                <div class="feature_item" onClick={this.handleShow}>
+            <div className="col-lg-3 col-md-6">
+                <div className="feature_item" onClick={this.handleShow}>
                     <img src={`img/services/${value.img}.png`} alt=""/>
                     <h4>{value.title}</h4>
                     <p>

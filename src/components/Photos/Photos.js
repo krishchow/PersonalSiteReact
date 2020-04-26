@@ -191,19 +191,19 @@ class Photos extends Component {
 
     render() {
         return (
-            <section class="portfolio_area" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="main_title text-left">
+            <section className="portfolio_area" id="portfolio">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="main_title text-left">
                                 <h2>Some of my<br/>
                                     Favorite Recent photographs</h2>
                             </div>
                         </div>
                     </div>
-                    <div class="filters portfolio-filter">
+                    <div className="filters portfolio-filter">
                         <ul>
-                            <li class="active" data-filter=".all">all</li>
+                            <li className="active" data-filter=".all">all</li>
                             <li data-filter=".port">portugal</li>
                             <li data-filter=".atlanta"> atlanta</li>
                             <li data-filter=".tor">toronto</li>
@@ -211,9 +211,9 @@ class Photos extends Component {
                         </ul>
                     </div>
             
-                    <div class="filters-content">
-                        <div class="row portfolio-grid justify-content-center">
-                            {photo_list.map((photo, index) => <Photo img={`${index+1}.JPG`} title={photo.title} desc={photo.desc} tags={photo.tags}/>)}
+                    <div className="filters-content">
+                        <div className="row portfolio-grid justify-content-center">
+                            {photo_list.map((photo, index) => <Photo key={`photo ${index}`} img={`${index+1}.JPG`} title={photo.title} desc={photo.desc} tags={photo.tags}/>)}
                         </div>
                     </div>
                 </div>

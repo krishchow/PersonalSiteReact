@@ -6,12 +6,12 @@ import {
 class Header extends Component {
     render() {
         return (
-            <section class="banner_area">
-                <div class="banner_inner d-flex align-items-center">
-                    <div class="container">
-                        <div class="banner_content text-center">
+            <section className="banner_area">
+                <div className="banner_inner d-flex align-items-center">
+                    <div className="container">
+                        <div className="banner_content text-center">
                             <h2>{`${this.props.title}`}</h2>
-                            <div class="page_link">
+                            <div className="page_link">
                                 <Link to="/">Home</Link>
                                 <Link to={`${this.props.link}`}>{`${this.props.link_test}`}</Link>
                             </div>

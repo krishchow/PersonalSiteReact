@@ -667,13 +667,11 @@ button:focus {
   padding-top: 30px; }
   .blog_info .post_tag {
     padding-bottom: 20px; }
-    .blog_info .post_tag a {
+    .blog_info .post_tag div {
       font: 300 14px/21px "Roboto", sans-serif;
       color: #000000; }
-      .blog_info .post_tag a:hover {
+      .blog_info .post_tag div:hover {
         color: #777777; }
-      .blog_info .post_tag a.active {
-        color: #4458dc; }
   .blog_info .blog_meta li a {
     font: 300 14px/20px "Roboto", sans-serif;
     color: #777777;
@@ -689,6 +687,10 @@ button:focus {
       vertical-align: middle; }
     .blog_info .blog_meta li a:hover {
       color: #4458dc; }
+
+.active {
+    color: #4458dc !important;
+}
 
 .blog_post img {
   max-width: 100%; }

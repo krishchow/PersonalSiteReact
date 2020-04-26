@@ -15,9 +15,9 @@ class Skill extends Component {
 
     render() {
         return (
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <div class="single-brand-item d-table">
-                    <div class="d-table-cell text-center" onClick={this.handleShow}>
+            <div className="col-lg-4 col-md-4 col-sm-6">
+                <div className="single-brand-item d-table">
+                    <div className="d-table-cell text-center" onClick={this.handleShow}>
                         <img src={`img/brands/${this.props.img}`} alt=""/>
                     </div>
                 </div>

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import {
-    Link
+    Link,
 } from "react-router-dom";
+
 class NavBar extends Component {
     render() {
         return (
@@ -20,29 +21,29 @@ class NavBar extends Component {
                             </button>
                             <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
                                 <ul className="nav navbar-nav menu_nav justify-content-end">
-                                    <li className="nav-item active">
+                                    <li className="nav-item">
                                         <Link className="nav-link" to="/">Home</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/about">About</Link>
                                     </li>
                                     <li className="nav-item submenu dropdown">
-                                        <Link to="/" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</Link>
+                                        <Link to="/blog" className="nav-link" role="button" aria-haspopup="true" aria-expanded="false">Blog</Link>
                                         <ul className="dropdown-menu">
                                             <li className="nav-item">
-                                                <a className="nav-link" href="first-blog.html">Intro to Krish</a>
+                                                <Link className="nav-link" to="/blog/first">Intro to Krish</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a className="nav-link" href="second-blog.html">Best Project</a>
+                                                <Link className="nav-link" to="/blog/second">Best Project</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a className="nav-link" href="third-blog.html">Connective Link</a>
+                                                <Link className="nav-link" to="/blog/third">Connective Link</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a className="nav-link" href="fourth-blog.html">CSS Design Zen</a>
+                                                <Link className="nav-link" to="/blog/fourth">CSS Design Zen</Link>
                                             </li>
                                             <li className="nav-item">
-                                                <a className="nav-link" href="fifth-blog.html">To Space, or to Tab</a>
+                                                <Link className="nav-link" to="/blog/fifth">To Space, or to Tab</Link>
                                             </li>
                                         </ul>
                                     </li>

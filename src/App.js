@@ -3,10 +3,16 @@ import {
   BrowserRouter,
   Switch,
   Route,
+  useRouteMatch
 } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
+import FirstBlog from './pages/blog/FirstBlog';
+import SecondBlog from './pages/blog/SecondBlog';
+import ThirdBlog from './pages/blog/ThirdBlog';
+import FourthBlog from './pages/blog/FourthBlog';
+import FifthBlog from './pages/blog/FifthBlog';
 
 
 export default function Router() {
@@ -30,8 +36,41 @@ export default function Router() {
                 <Route path="/portfolio">
                     <PortfolioPage />
                 </Route>
+                <Route path="/blog">
+                    <Blogs />
+                </Route>
             </Switch>
         </div>
     </BrowserRouter>
   );
+}
+
+function Blogs() {
+    // The `path` lets us build <Route> paths that are
+    // relative to the parent route, while the `url` lets
+    // us build relative links.
+    let { path } = useRouteMatch();
+    console.log(path);
+    return (
+        <Switch>
+            <Route exact path={path}>
+                <FifthBlog/>
+            </Route>
+            <Route path={`${path}/first`}>
+                <FirstBlog/>
+            </Route>
+            <Route path={`${path}/second`}>
+                <SecondBlog/>
+            </Route>
+            <Route path={`${path}/third`}>
+                <ThirdBlog/>
+            </Route>
+            <Route path={`${path}/fourth`}>
+                <FourthBlog/>
+            </Route>
+            <Route path={`${path}/fifth`}>
+                <FifthBlog/>
+            </Route>
+        </Switch>
+    );
 }

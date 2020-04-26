@@ -43,7 +43,7 @@ class Home extends Component {
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton/>
                         <Modal.Body>
-                            hi
+                            <p>You can contact me at krishchow<span style={{'display':'none'}}>foo</span>.10@gmail.com</p>
                         </Modal.Body>
                     <Modal.Footer>
                         <Button variant="primary" onClick={this.handleClose}>

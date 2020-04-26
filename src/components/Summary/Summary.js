@@ -3,17 +3,17 @@ import React, { Component } from 'react';
 class Summary extends Component {
     render() {
         return (
-            <section class="about_area section_gap">
-                <div class="container">
-                    <div class="row justify-content-start align-items-center">
-                        <div class="col-lg-5">
-                            <div class="about_img">
-                                <img class="" src="img/about-us.png" alt=""/>
+            <section className="about_area section_gap">
+                <div className="container">
+                    <div className="row justify-content-start align-items-center">
+                        <div className="col-lg-5">
+                            <div className="about_img">
+                                <img className="" src="img/about-us.png" alt=""/>
                             </div>
                         </div>
 
-                        <div class="offset-lg-1 col-lg-5">
-                            <div class="main_title text-left">
+                        <div className="offset-lg-1 col-lg-5">
+                            <div className="main_title text-left">
                                 <h2>Let<br/>
                                     Me Introduce<br/>
                                     Myself
@@ -29,7 +29,7 @@ class Summary extends Component {
                                     hiking and taking pictures while I'm at it. I keep up with the news via Yahoo Finance, Bloomberg and 
                                     Investing.com. For my tech-specific news I stick to The Verge, Gizmodo and TechCruch. 
                                 </p>
-                                <a class="primary_btn" href="img/Krish Chowdhary Resume.pdf"><span>Download CV</span></a>
+                                <a className="primary_btn" href="img/Krish Chowdhary Resume.pdf"><span>Download CV</span></a>
                             </div>
                         </div>
                     </div>
