@@ -3,10 +3,6 @@ const process = require('process');
 const app = express();
 
 app.use(express.static('build'));
-let port = 3000;
-
-if (process.env.PORT) {
-    port = process.env.PORT;
-}
+let port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`started, listening on ${port}`));
