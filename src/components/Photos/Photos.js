@@ -185,10 +185,6 @@ const photo_list = [
 ];
 
 class Photos extends Component {
-    componentDidMount() {
-        window.photoLoad();
-    }
-
     render() {
         return (
             <section className="portfolio_area" id="portfolio">
