@@ -19,14 +19,14 @@ class Summary extends Component {
                                     Myself
                                 </h2>
                                 <p>
-                                    I'm a third year student at the University of Toronto, studying Computer Science
+                                    I'm a fourth year student at the University of Toronto, studying Computer Science
                                     and Mathematics. I'm interested in Software Engineering, Cyber Security, Blockchain,
                                     Data Science, Full-Stack Development, Project Management and Consulting.
                                 </p>
                                 <p>
-                                    Outside of work, I'm a huge film buff, someone my favorite movies include: Fight Club (duh),
+                                    Outside of work, I'm a huge film buff, someone of my favorite movies are: Fight Club,
                                     Blade Runner, The Fifth Element, Looper, 2001: A Space Odyssey and 12 Angry Men. I also love going
-                                    hiking and taking pictures while I'm at it. I keep up with the news via Yahoo Finance, Bloomberg and 
+                                    hiking and taking pictures while I'm at it. I keep up with the news via Yahoo Finance, HackerNews, Bloomberg and 
                                     Investing.com. For my tech-specific news I stick to The Verge, Gizmodo and TechCruch. 
                                 </p>
                                 <a className="primary_btn" href="img/Krish Chowdhary Resume.pdf"><span>Download CV</span></a>
